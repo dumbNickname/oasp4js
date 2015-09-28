@@ -1,0 +1,15 @@
+<p>
+    <div with-validation-messages>
+        <input type="text" placeholder="User Name" name="userName" class="form-control"
+               data-ng-model="SIC.credentials.username"
+               data-ng-required="true">
+    </div>
+</p>
+
+<p>
+    <span class="label label-danger"
+              data-ng-show="SIC.validation.passwordNotProvided()">Please enter your password!</span>
+    <input type="password" placeholder="Password" name="password" class="form-control"
+           data-ng-model="SIC.credentials.password" data-ng-required="true">
+</p>
+
